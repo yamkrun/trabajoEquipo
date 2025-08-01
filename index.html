@@ -18,37 +18,37 @@
     Personajes
   </div>
   <div class="mb-8">
-    barara de busqueda y el dropdawn
-  </div>
-  <div id="cards" class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 pb-10">
-  </div>
-  <div class="flex justify-center gap-4 m-4">
-  <button id="anterior" class="px-4 py-2 bg-purple-500 text-white rounded disabled:opacity-50">Anterior</button>
-  <button id="siguiente" class="px-4 py-2 bg-purple-500 text-white rounded disabled:opacity-50">Siguiente</button>
-  </div>
-  <section id="filtros" class="flex flex-wrap gap-4 justify-center p-4 bg-white dark:bg-gray-800 shadow">
-    <select name="status" class="px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600">
+     <section id="filtros" class="flex flex-wrap gap-4 justify-center p-4  bg-[#1b1f21]">
+    <select name="status" class="px-3 py-2 border rounded bg-gray-700 border-gray-600">
       <option value="">Estado</option>
       <option value="alive">Vivo</option>
       <option value="dead">Muerto</option>
       <option value="unknown">Desconocido</option>
     </select>
-    <select name="gender" class="px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600">
+    <select name="gender" class="px-3 py-2 border rounded bg-gray-700 border-gray-600">
       <option value="">Género</option>
       <option value="female">Mujer</option>
       <option value="male">Hombre</option>
       <option value="genderless">Sin género</option>
       <option value="unknown">Desconocido</option>
     </select>
-    <select name="species" id="species-select" class="px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600">
+    <select name="species" id="species-select" class="px-3 py-2 border rounded bg-gray-700 border-gray-600">
       <option value="">Especie</option>
     </select>
     <input name="name" type="text" placeholder="Buscar por nombre"
       class="px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600" />
   </section>
+  </div>
+  <div class="w-screen flex justify-center items-center"><div id="personajes-container" class="grid place-content-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 px-6 pb-10">
+  </div></div>
+  <div class="flex justify-center gap-4 m-4">
+  <button id="anterior" class="px-4 py-2 bg-purple-500 text-white rounded disabled:opacity-50">Anterior</button>
+  <button id="siguiente" class="px-4 py-2 bg-purple-500 text-white rounded disabled:opacity-50">Siguiente</button>
+  </div>
+ 
   <div id="modal-personaje" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center">
     <div class="bg-white dark:bg-gray-800 p-6 rounded-xl max-w-xl w-full space-y-4 text-black dark:text-white relative">
-      <button id="cerrar-modal" class="absolute top-2 right-3 text-3xl text-red-500 font-bold hover:text-red-700">×</button>
+      <button id="cerrar-modal" class="absolute top-2 right-3 text-3xl text-red-500 font-bold hover:text-red-700">x</button>
       <img id="modal-img" class="mx-auto w-40 h-40 rounded-full border-4 border-white" />
       <h2 id="modal-nombre" class="text-2xl font-bold text-center"></h2>
       <p id="modal-id" class="text-center text-gray-500 dark:text-gray-400"></p>
