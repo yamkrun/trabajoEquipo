@@ -1,5 +1,3 @@
-
-
 let paginaActual = 1;
 
 
@@ -84,7 +82,7 @@ function renderizarPersonaje({
           <p class="mb-1 font-normal text-gray-700 dark:text-gray-400">Género: ${gender}</p>
           <p class="mb-1 font-normal text-gray-700 dark:text-gray-400">Estado: ${status}</p>
           <p class="font-normal text-gray-700 dark:text-gray-400">Especie: ${species}</p>
-      <button class="mas-info inline-flex items-center mt-2 px-3 py-2 text-sm font-medium text-black bg-lime-400 rounded-lg hover:bg-lime-600"
+      <button class="mas-info flex justify-center w-[180px] items-center mt-2 px-3 py-2 text-sm font-medium text-black bg-lime-400 rounded-lg hover:bg-lime-600"
         data-img="${image}"
         data-name="${name}"
         data-id="#${id}"

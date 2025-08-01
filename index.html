@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="style/output.css" />
 </head>
 <body class="min-h-screen flex flex-col bg-gradient-to-b from-[#0c0c0c] to-[#1b1f21] text-white font-sans">
-  <header class="flex items-center justify-center p-4 bg-black shadow-lg">
+  <header class="flex items-center justify-center p-4 bg-black/50 shadow-lg">
     <img src="./img/rick and morty-Photoroom.png" alt="Rick and Morty Logo" class="h-20 w-auto drop-shadow-[0_0_10px_#00ff88]" />
   </header>
   <div>
-    <img src="https://images7.alphacoders.com/133/1335145.jpg" alt="Rick and Morty Banner" class="w-full max-h-[400px] object-cover opacity-80 shadow-lg" />
+    <img src="https://images7.alphacoders.com/133/1335145.jpg" alt="Rick and Morty Banner" class="w-full max-h-[500px] object-cover opacity-80 shadow-lg" />
   </div>
   <div class="text-center font-bold text-5xl mt-10 mb-6 text-lime-400 drop-shadow-md">
     Personajes
@@ -39,7 +39,8 @@
       class="px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600" />
   </section>
   </div>
-  <div class="w-screen flex justify-center items-center"><div id="personajes-container" class="grid place-content-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 px-6 pb-10">
+  <div class="w-full flex justify-center items-center">
+    <div id="personajes-container" class="grid place-content-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 px-6 pb-10">
   </div></div>
   <div class="flex justify-center gap-4 m-4">
   <button id="anterior" class="px-4 py-2 bg-purple-500 text-white rounded disabled:opacity-50">Anterior</button>
@@ -47,8 +48,8 @@
   </div>
  
   <div id="modal-personaje" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center">
-    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl max-w-xl w-full space-y-4 text-black dark:text-white relative">
-      <button id="cerrar-modal" class="absolute top-2 right-3 text-3xl text-red-500 font-bold hover:text-red-700">x</button>
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl max-w-xl w-full max-h-screen overflow-y-auto space-y-4 text-black dark:text-white relative">
+      <button id="cerrar-modal" class="absolute top-2 right-3 text-3xl text-lime-400 font-bold hover:text-lime-500">x</button>
       <img id="modal-img" class="mx-auto w-40 h-40 rounded-full border-4 border-white" />
       <h2 id="modal-nombre" class="text-2xl font-bold text-center"></h2>
       <p id="modal-id" class="text-center text-gray-500 dark:text-gray-400"></p>
@@ -62,5 +63,6 @@
       <ul id="modal-episodios" class="list-disc pl-5 text-sm"></ul>
     </div>
   </div>
+  <footer class="flex justify-center items-center w-full h-[150px] bg-purple-500 ">© 2025 - Proyecto hecho con 🛸</footer>
 </body>
 </html>
